@@ -5,13 +5,13 @@ public class Main {
     public static void main(String[] args) {
 
         List<Integer> list = new ArrayList<Integer>();
-        list.add(4);
-        list.add(45);
-        list.add(89);
-        list.add(126);
+        list.add(10);
+        list.add(10);
+        list.add(10);
+        list.add(5);
 
         System.out.println(sumForLoop(list));
-
+        System.out.println(whileLoop(list));
 
     }
 
@@ -23,5 +23,15 @@ public class Main {
         return sum;
     }
 
+    static int whileLoop(List<Integer> list){
+        int sum = 0;
+        int i = 0;
+        while (i < list.size()) {
+
+            sum = sum + list.get(i);
+            ++i;
+        }
+        return sum;
+    }
 
 }
